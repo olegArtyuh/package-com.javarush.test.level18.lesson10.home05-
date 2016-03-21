@@ -16,16 +16,13 @@ import java.util.Scanner;
 -3.50 - -3
 -3.51 - -4
 */
-
 public class Solution {
-    public static void main(String[] args) throws IOException
-    {   
-        //ad stream
+    public static void main(String[] args) throws IOException {
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Scanner fileR = new Scanner(new File(reader.readLine()));                    
         FileWriter fileW = new FileWriter(new File(reader.readLine()));               
 
-        //reading and writing
         while(fileR.hasNext()) {
             String[] num = fileR.nextLine().split(" ");                               
             
@@ -34,7 +31,6 @@ public class Solution {
                 fileW.write(num[i] + " ");
             }
         }
-        //streams are closed
         reader.close();
         fileR.close();
         fileW.close();
