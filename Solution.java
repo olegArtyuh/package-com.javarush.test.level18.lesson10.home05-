@@ -32,6 +32,7 @@ public class Solution {
                 fileW.write(num[i] + " ");
             }
         }
+        
         reader.close();
         fileR.close();
         fileW.close();
