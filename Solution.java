@@ -1,3 +1,5 @@
+package com.javarush.test.level18.lesson10.home05
+
 import java.io.*;
 import java.util.Scanner;
 
