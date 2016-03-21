@@ -25,7 +25,6 @@ public class Solution {
 
         while(fileR.hasNext()) {
             String[] num = fileR.nextLine().split(" ");                               
-            
             for(int i = 0; i < num.length; i++) {
                 num[i] = String.valueOf(Math.round(Double.parseDouble(num[i])));
                 fileW.write(num[i] + " ");
