@@ -21,20 +21,20 @@ public class Solution {
     public static void main(String[] args) throws IOException
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Scanner scanner = new Scanner(new File(reader.readLine()));
-        FileWriter writeFile = new FileWriter(new File(reader.readLine()));
+        Scanner fileR = new Scanner(new File(reader.readLine()));
+        FileWriter fileW = new FileWriter(new File(reader.readLine()));
 
 
-        while(scanner.hasNext()) {
-            String[] b = scanner.nextLine().split(" ");
-            for(int i = 0; i < b.length; i++) {
-                b[i] = String.valueOf(Math.round(Double.parseDouble(b[i])));
-                writeFile.write(b[i] + " ");
+        while(fileR.hasNext()) {
+            String[] num = fileR.nextLine().split(" ");
+            for(int i = 0; i < num.length; i++) {
+                num[i] = String.valueOf(Math.round(Double.parseDouble(num[i])));
+                fileW.write(num[i] + " ");
             }
         }
         
         reader.close();
-        scanner.close();
-        writeFile.close();
+        fileR.close();
+        fileW.close();
     }
 }
