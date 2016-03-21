@@ -19,13 +19,14 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Scanner fileR = new Scanner(new File(reader.readLine()));                    
         FileWriter fileW = new FileWriter(new File(reader.readLine()));               
 
-        while(fileR.hasNext()) {
+        while (fileR.hasNext()) {
             String[] num = fileR.nextLine().split(" ");                               
-            for(int i = 0; i < num.length; i++) {
+            for (int i = 0; i < num.length; i++) {
                 num[i] = String.valueOf(Math.round(Double.parseDouble(num[i])));
                 fileW.write(num[i] + " ");
             }
