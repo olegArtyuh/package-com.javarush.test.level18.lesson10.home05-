@@ -11,18 +11,14 @@ public class Solution {
 
         while(scanner.hasNext()) {
             String[] b = scanner.nextLine().split(" ");
-            for(int i = 0; i < b.length; i++)
-            {
+            for(int i = 0; i < b.length; i++) {
                 b[i] = String.valueOf(Math.round(Double.parseDouble(b[i])));
-
                 writeFile.write(b[i] + " ");
-      
+            }
         }
-
+        
         reader.close();
         scanner.close();
         writeFile.close();
-
-
     }
 }
