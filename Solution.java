@@ -16,6 +16,7 @@ import java.util.Scanner;
 -3.50 - -3
 -3.51 - -4
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         
