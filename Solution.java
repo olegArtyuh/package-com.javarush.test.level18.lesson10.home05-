@@ -19,7 +19,6 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Scanner fileR = new Scanner(new File(reader.readLine()));                    
         FileWriter fileW = new FileWriter(new File(reader.readLine()));               
